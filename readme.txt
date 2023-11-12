@@ -7,30 +7,26 @@ aiBot.py: Provides a GUI for drag-and-drop functionality to process Event Viewer
 aichat.py: An AI chatbot script that uses OpenAI's GPT-3.5 model to answer questions about the event logs.
 app.py: A Flask application that serves as the backend for the AI chatbot.
 requirements.txt: Lists all Python dependencies required for the scripts.
+
 Setup Instructions
 Clone the Repository:
 
-bash
-Copy code
 git clone https://github.com/Chertus/EventViewerAI.git
 cd EventViewerAI
-Create and Activate a Virtual Environment (Optional but Recommended):
 
+Create and Activate a Virtual Environment (Optional but Recommended):
 Windows:
-Copy code
 python -m venv venv
 venv\Scripts\activate
+
 macOS/Linux:
-bash
-Copy code
 python3 -m venv venv
 source venv/bin/activate
+
 Install Dependencies:
-
-Copy code
 pip install -r requirements.txt
-Set Up Environment Variables:
 
+Set Up Environment Variables:
 You need to set the OPENAI_API_KEY environment variable with your OpenAI API key.
 Windows: set OPENAI_API_KEY=your_api_key
 macOS/Linux: export OPENAI_API_KEY=your_api_key
