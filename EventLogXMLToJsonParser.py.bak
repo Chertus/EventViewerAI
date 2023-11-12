@@ -3,15 +3,9 @@ import json
 import xml.etree.ElementTree as ET
 
 def parse_event_log(file_path):
-    try:
-        tree = ET.parse(file_path)
-        root = tree.getroot()
-    except ET.ParseError as e:
-        print(f"XML parsing error: {e}")
-        return None
-    except FileNotFoundError:
-        print(f"File not found: {file_path}")
-        return None
+    # Assuming the file is in XML format
+    tree = ET.parse(file_path)
+    root = tree.getroot()
 
     logs = []
     for event in root.findall('.//Event'):

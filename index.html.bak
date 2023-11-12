@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Chatbot</title>
+    <style>
+        /* Add CSS to mimic ChatGPT's style */
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <!-- Chat messages -->
+    </div>
+    <input type="text" id="user-input" placeholder="Ask a question...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+            var userInput = document.getElementById('user-input').value;
+            // Send userInput to Flask backend and get response
+            // Update chat-container with the response
+        }
+    </script>
+</body>
+</html>
